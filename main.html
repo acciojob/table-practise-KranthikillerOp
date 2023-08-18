@@ -3,42 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feedback Form</title>
 <style>
-  label {
-    display: block;
-    margin-bottom: 5px;
+  table {
+    border-collapse: collapse;
+    background-color: yellow;
+    width: 60%;
+    margin: auto;
   }
 
-  input[type="text"],
-  input[type="url"],
-  input[type="color"],
-  input[type="range"] {
-    width: 100%;
+  th, td {
+    border: 1px solid black;
     padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
   }
 </style>
+<title>HTML Table Example</title>
 </head>
 <body>
-  <h1>Feedback Form</h1>
-  <form action="#" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
-    
-    <label for="portfolio">Portfolio:</label>
-    <input type="url" id="portfolio" name="portfolio" required>
-    
-    <label for="favColor">Favorite Color:</label>
-    <input type="color" id="favColor" name="favColor" required>
-    
-    <label for="likeness">Likeness (1-100):</label>
-    <input type="range" id="likeness" name="likeness" min="1" max="100" required>
-    
-    <button type="submit">Submit</button>
-  </form>
+  <h1>Student Details</h1>
+  <table>
+    <caption>Student Details</caption>
+    <tr>
+      <th>NAME</th>
+      <th>AGE</th>
+      <th>BRANCH</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>20</td>
+      <td>Computer Science</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>22</td>
+      <td>Electrical Engineering</td>
+    </tr>
+    <!-- You can add more rows here -->
+  </table>
 </body>
 </html>
